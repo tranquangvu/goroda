@@ -109,3 +109,14 @@ Support to load all models class, much more easier to debug your app. If your ne
   RACK_ENV=test bundle exec rake console
   RACK_ENV=production bundle exec rake console
 ```
+
+## Debugger
+
+Use `byebug` as default debugger tool, please read `byebug` document to see how to use.
+
+## Todos
+
+- Add Rspec as testing tool
+- Add controllers and serializers
+- User authentication with JWT
+- Config mailer
