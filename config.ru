@@ -4,11 +4,13 @@ require 'dotenv'
 Dotenv.load(".env.#{ENV['RACK_ENV']}", '.env')
 
 dev = ENV['RACK_ENV'] == 'development'
+test = ENV['RACK_ENV'] == 'test'
 
 if dev
   require 'logger'
   logger = Logger.new($stdout)
 end
+require 'byebug' if dev || test
 
 require 'rack/unreloader'
 Unreloader = Rack::Unreloader.new(subclasses: %w[Roda Sequel::Model], logger: logger, reload: dev) { App }

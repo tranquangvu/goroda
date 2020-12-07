@@ -1,5 +1,8 @@
 # Ignore env files
-/.env
-/.env.development
-/.env.test
-/.env.production
+.env
+.env.development
+.env.test
+.env.production
+
+# Ignore byebug history
+.byebug_history

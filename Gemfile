@@ -13,6 +13,10 @@ gem 'roda', '~> 3.38'
 gem 'sequel', '~> 5.39'
 gem 'sequel_pg', '~> 1.14'
 
+group :development, :test do
+  gem 'byebug'
+end
+
 group :development do
   gem 'sequel-annotate'
 end
