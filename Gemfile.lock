@@ -1,0 +1,39 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    dotenv (2.7.6)
+    nio4r (2.5.4)
+    pg (1.2.3)
+    puma (5.1.0)
+      nio4r (~> 2.0)
+    rack (2.2.3)
+    rack-unreloader (1.7.0)
+    rake (13.0.1)
+    refrigerator (1.3.0)
+    roda (3.38.0)
+      rack
+    sequel (5.39.0)
+    sequel-annotate (1.6.0)
+      sequel (>= 4)
+    sequel_pg (1.14.0)
+      pg (>= 0.18.0, != 1.2.0)
+      sequel (>= 4.38.0)
+    warning (1.1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  dotenv
+  puma (~> 5.1)
+  rack-unreloader
+  rake
+  refrigerator
+  roda (~> 3.38)
+  sequel (~> 5.39)
+  sequel-annotate
+  sequel_pg (~> 1.14)
+  warning
+
+BUNDLED WITH
+   2.1.4
